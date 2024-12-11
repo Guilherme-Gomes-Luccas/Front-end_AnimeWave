@@ -44,7 +44,7 @@ export default async function Home() {
   
   const getUserData = async (accessToken: string) => {
     try {
-      const response = await fetch('http://localhost:3001/get-user', {
+      const response = await fetch('https://back-end-animewave.onrender.com/get-user', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${accessToken}`
@@ -62,7 +62,7 @@ export default async function Home() {
 
   const getPosts = async () => {
     try {
-      const response = await fetch('http://localhost:3001/get-posts', {
+      const response = await fetch('https://back-end-animewave.onrender.com/get-posts', {
         method: 'GET'
       });
 
