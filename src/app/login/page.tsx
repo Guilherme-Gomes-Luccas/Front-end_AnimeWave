@@ -59,7 +59,7 @@ export default function Login() {
 			}else {
 
         try {
-          const response = await fetch("http://localhost:3001/login", {
+          const response = await fetch("https://back-end-animewave.onrender.com/login", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -99,7 +99,7 @@ export default function Login() {
   }
 
 	const handleGoogleSubmit = async () => {
-		window.location.href = "http://localhost:3001/auth/google/login";
+		window.location.href = "https://back-end-animewave.onrender.com/auth/google/login";
 	}
 
   return (
