@@ -47,7 +47,7 @@ export default function PostList(){
 						username={post.username}
 						content={post.content}
 						hashtags={post.hashtags}
-						width="100"
+						width=100
 					/>
 				))}
 			</div>
