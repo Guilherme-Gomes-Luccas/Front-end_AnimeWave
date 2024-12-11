@@ -57,7 +57,7 @@ export default function Sidebar({refreshToken}: Props) {
   const getSession = async () => {
     console.log('1:', accessToken);
     try {
-      const response = await fetch('http://localhost:3001/session', {
+      const response = await fetch('https://back-end-animewave.onrender.com/session', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${accessToken}`
@@ -73,7 +73,7 @@ export default function Sidebar({refreshToken}: Props) {
         if(!refreshToken) {
           window.location.href = '/login';
         }
-        const newToken = await fetch('http://localhost:3001/refresh', {
+        const newToken = await fetch('https://back-end-animewave.onrender.com/refresh', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ export default function Sidebar({refreshToken}: Props) {
         }
       }
 
-      const responseUser = await fetch('http://localhost:3001/get-user', {
+      const responseUser = await fetch('https://back-end-animewave.onrender.com/get-user', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${accessToken}`
