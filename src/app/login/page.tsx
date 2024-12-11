@@ -87,7 +87,7 @@ export default function Login() {
               domain: 'localhost',
             })
 
-            window.location.href = "/home";
+            window.location.href = "https://front-end-anime-wave.vercel.app/home";
            
           }
 
@@ -99,7 +99,7 @@ export default function Login() {
   }
 
 	const handleGoogleSubmit = async () => {
-		window.location.href = "https://back-end-animewave.onrender.com/auth/google/login";
+		window.location.href = "https://front-end-anime-wave.vercel.app/auth/google/login";
 	}
 
   return (
