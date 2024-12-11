@@ -125,7 +125,7 @@ export default function Sidebar({refreshToken}: Props) {
     } else {
       console.log('aqui')
 
-      const response = await fetch(`http://localhost:3001/novo-post`, {
+      const response = await fetch(`https://back-end-animewave.onrender.com/novo-post`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
