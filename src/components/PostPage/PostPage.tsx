@@ -20,7 +20,7 @@ export default function PostPage({id, editIcon, deleteButton}: PostPageProps) {
   const [ post, setPost ] = useState<Post | null>(null);
   const getPost = async (id: string | null) => {
     try {
-      const response = await fetch(`http://localhost:3001/get-posts/${id}`, {
+      const response = await fetch(`https://back-end-animewave.onrender.com/get-posts/${id}`, {
         method: 'POST'
       });
   
