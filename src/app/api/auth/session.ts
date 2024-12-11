@@ -7,7 +7,7 @@ export async function session(accessToken: string | undefined | string[], refres
   const cookieStore = await cookies();
 
   try {
-    const response = await fetch('http://localhost:3001/session', {
+    const response = await fetch('https://back-end-animewave.onrender.com/session', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${accessToken}`
