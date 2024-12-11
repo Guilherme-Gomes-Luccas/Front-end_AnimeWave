@@ -5,7 +5,7 @@ export async function refresh(refreshToken: string | undefined | string[]) {
   }
 
   try {
-    const response = await fetch('http://localhost:3001/refresh', {
+    const response = await fetch('https://back-end-animewave.onrender.com/refresh', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
