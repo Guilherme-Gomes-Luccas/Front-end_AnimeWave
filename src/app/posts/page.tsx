@@ -13,6 +13,7 @@ export default function Posts() {
     const url = new URL(window.location.href);
     setId(url.searchParams.get('id'));
   })
+  
   return (
     <div className="flex">
       <Sidebar refreshToken={undefined} />
