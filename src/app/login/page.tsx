@@ -76,12 +76,12 @@ export default function Login() {
           }else {
             cookies.set('accessToken', responseData.accessToken, {
               sameSite: 'lax',
-              secure: false,
+              secure: true,
               path: '/',
             })
             cookies.set('refreshToken', responseData.refreshToken, {
               sameSite: 'lax',
-              secure: false,
+              secure: true,
               path: '/',
             })
 
