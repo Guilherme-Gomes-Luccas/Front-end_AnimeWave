@@ -9,7 +9,7 @@ export default function PostList() {
 
   const getPosts = async () => {
     try {
-      const response = await fetch("http://localhost:3001/get-posts", {
+      const response = await fetch("https://back-end-animewave.onrender.com/get-posts", {
         method: "GET",
       });
 
