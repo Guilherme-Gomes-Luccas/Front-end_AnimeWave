@@ -78,13 +78,11 @@ export default function Login() {
               sameSite: 'lax',
               secure: false,
               path: '/',
-              domain: 'localhost',
             })
             cookies.set('refreshToken', responseData.refreshToken, {
               sameSite: 'lax',
               secure: false,
               path: '/',
-              domain: 'localhost',
             })
 
             window.location.href = "/home";
