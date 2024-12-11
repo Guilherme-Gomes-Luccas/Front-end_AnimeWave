@@ -36,7 +36,7 @@ export default async function MyPosts() {
     accessToken = await getSession();
 
     try {
-      const response = await fetch('http://localhost:3001/get-posts/my-posts', {
+      const response = await fetch('https://back-end-animewave.onrender.com/get-posts/my-posts', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ export default async function MyPosts() {
 
       while(responseData.error) {
         accessToken = await getSession();
-        const response = await fetch('http://localhost:3001/get-posts/my-posts', {
+        const response = await fetch('https://back-end-animewave.onrender.com/get-posts/my-posts', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ export default async function MyPosts() {
   const getUserData = async (accessToken: string) => {
     modalLoading = true;
     try {
-      const response = await fetch('http://localhost:3001/get-user', {
+      const response = await fetch('https://back-end-animewave.onrender.com/get-user', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${accessToken}`
