@@ -26,7 +26,7 @@ const PostCard: React.FC<PostCardProps> = ({ id, avatar, username, content, hash
 
   const getPostData = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/get-posts/${id}`, {
+      const response = await fetch(`https://back-end-animewave.onrender.com/get-posts/${id}`, {
         method: 'POST'
       });
 
@@ -41,7 +41,7 @@ const PostCard: React.FC<PostCardProps> = ({ id, avatar, username, content, hash
 
   const editPost = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/edit-post/${id}`, {
+      const response = await fetch(`https://back-end-animewave.onrender.com/edit-post/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ const PostCard: React.FC<PostCardProps> = ({ id, avatar, username, content, hash
 
   const deletePost = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/delete-post/${id}`, {
+      const response = await fetch(`https://back-end-animewave.onrender.com/delete-post/${id}`, {
         method: 'DELETE'
       });
 
