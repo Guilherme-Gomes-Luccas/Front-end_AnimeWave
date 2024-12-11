@@ -5,9 +5,12 @@ import { Post } from "../home/page";
 import { useEffect, useState } from "react";
 import Sidebar from "../components/SideBar";
 import PostList from "../components/PostList";
+import { useCookies } from "next-client-cookies";
 
 export default function Posts() {
   const [id, setId] = useState<string | null>("");
+  const cookies = useCookies();
+  let refreshToken = cookies.get('refreshToken');
 
   useEffect(() => {
     const url = new URL(window.location.href);
@@ -16,7 +19,7 @@ export default function Posts() {
   
   return (
     <div className="flex">
-      <Sidebar refreshToken={undefined} />
+      <Sidebar refreshToken={refreshToken} />
       <div className="h-screen w-screen flex flex-col">
         <GoBack url="/home"/>
 
