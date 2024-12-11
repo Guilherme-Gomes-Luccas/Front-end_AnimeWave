@@ -15,7 +15,7 @@ export default function Posts() {
   })
   return (
     <div className="flex">
-      <Sidebar />
+      <Sidebar refreshToken={undefined} />
       <div className="h-screen w-screen flex flex-col">
         <GoBack url="/home"/>
 
