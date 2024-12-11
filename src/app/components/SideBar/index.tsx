@@ -185,27 +185,27 @@ export default function Sidebar({refreshToken}: Props) {
 
           <div className="flex flex-row items-center">
             <MdOutlineYoutubeSearchedFor className="mt-2 size-9 mb-2" />
-            <Link className="font-semibold hover:text-yellow-500 ml-3 mb-1 mt-3" >Pesquisar</Link>
+            <Link className="font-semibold hover:text-yellow-500 ml-3 mb-1 mt-3" href="#">Pesquisar</Link>
           </div>
 
           <div className="flex flex-row items-center">
             <IoMdNotifications className="mt-2 size-9 mb-2 " />
-            <Link className="font-semibold hover:text-yellow-500 ml-3 mb-1 mt-3">Notificações</Link>
+            <Link className="font-semibold hover:text-yellow-500 ml-3 mb-1 mt-3" href="#">Notificações</Link>
           </div>
 
           <div className="flex flex-row items-center">
               <FaEnvelope className="mt-2 size-7 mb-2 ml-1" />
-              <Link className="font-semibold hover:text-yellow-500 ml-4 mb-1 mt-3">Mensagens</Link>
+              <Link className="font-semibold hover:text-yellow-500 ml-4 mb-1 mt-3" href="#">Mensagens</Link>
           </div>
 
           <div className="flex flex-row items-center">
               <FaUser className="mt-2 size-7 mb-2 ml-1" />
-              <Link className="font-semibold hover:text-yellow-500 ml-4 mb-1 mt-3">Perfil</Link>
+              <Link className="font-semibold hover:text-yellow-500 ml-4 mb-1 mt-3" href="#">Perfil</Link>
           </div>
 
           <div className="flex flex-row items-center">
               <GiExitDoor className="mt-2 size-8 mb-2 ml-1" />
-              <Link className="font-semibold hover:text-yellow-500 ml-3 mb-1 mt-3">Sair</Link>
+              <Link className="font-semibold hover:text-yellow-500 ml-3 mb-1 mt-3" href="#">Sair</Link>
           </div>
 
         </ul>
