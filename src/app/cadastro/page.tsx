@@ -74,7 +74,7 @@ export default function Cadastro() {
 					}
 				})
 			}else {
-				window.location.href = 'https://front-end-anime-wave.vercel.app/login';
+				window.location.href = '/login';
 			}
 		}
 
