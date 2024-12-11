@@ -47,7 +47,7 @@ export default function Cadastro() {
 			setPasswordError("As senhas digitadas devem ser iguais!");
 		
 		} else {
-			const response = await fetch("http://localhost:3001/novo-usuario", {
+			const response = await fetch("https://back-end-animewave.onrender.com/novo-usuario", {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ export default function Cadastro() {
 	};
 
 	const handleGoogleSubmit = async () => {
-		window.location.href = "http://localhost:3001/auth/google/login";
+		window.location.href = "https://back-end-animewave.onrender.com/auth/google/login";
 	}
 
 	return (
