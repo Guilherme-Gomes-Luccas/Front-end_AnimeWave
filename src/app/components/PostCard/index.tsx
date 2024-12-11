@@ -78,7 +78,7 @@ const PostCard: React.FC<PostCardProps> = ({ id, avatar, username, content, hash
   }, [id]);
 
   return (
-    <div className={`flex bg-white rounded-lg shadow-md p-4 mb-4 w-[${width}px] mx-auto cursor-pointer text-wrap h-fit`}>
+    <div className={`flex bg-white rounded-lg shadow-md p-4 mb-4 w-[300px] mx-auto cursor-pointer text-wrap h-fit`}>
 
         <div className="w-12 h-12 flex flex-col gap-6">
           <Image
