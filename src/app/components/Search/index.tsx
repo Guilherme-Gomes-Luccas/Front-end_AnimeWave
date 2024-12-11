@@ -37,7 +37,7 @@ export default function Search({items, posts, width, gap, myPosts}: SearchProps)
 
       try {
 
-        const response = await fetch(`http://localhost:3001/get-posts/search/${encodeURIComponent(query)}`, {
+        const response = await fetch(`https://back-end-animewave.onrender.com/get-posts/search/${encodeURIComponent(query)}`, {
           method: 'POST',
         });
   
