@@ -87,7 +87,7 @@ export default function Login() {
               domain: 'localhost',
             })
 
-            window.location.href = "https://front-end-anime-wave.vercel.app/home";
+            window.location.href = "/home";
            
           }
 
